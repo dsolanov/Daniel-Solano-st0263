@@ -79,3 +79,6 @@ El API Gateway expone una API REST para interactuar con los microservicios.
 - https://www.geeksforgeeks.org/express-js-req-query-property/
 - https://www.tabnine.com/code/javascript/functions/amqplib/Connection/createChannel
 - https://github.com/amqp-node/amqplib/issues/250
+- https://www.npmjs.com/package/@grpc/proto-loader
+- https://www.npmjs.com/package/grpc-tools
+- https://www.npmjs.com/package/request
