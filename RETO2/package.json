@@ -1,0 +1,35 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "procesos comunicantes por API REST, RPC y MOM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsolanov/Daniel-Solano-st0263.git"
+  },
+  "keywords": [
+    "lab2",
+    "API",
+    "REST",
+    "RPC",
+    "MOM"
+  ],
+  "author": "Daniel Solano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsolanov/Daniel-Solano-st0263/issues"
+  },
+  "homepage": "https://github.com/dsolanov/Daniel-Solano-st0263#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.7.8",
+    "amqplib": "^0.10.3",
+    "express": "^4.18.2",
+    "google-protobuf": "^3.21.2",
+    "grpc": "^1.24.11",
+    "grpc-tools": "^1.12.4",
+    "request": "^2.88.2"
+  }
+}

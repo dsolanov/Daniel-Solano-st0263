@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto"; // Importa Empty desde google/protobuf
+
+package file_service;
+
+message FileList {
+  repeated string files = 1;
+}
+
+service FileService {
+  rpc ListFiles (google.protobuf.Empty) returns (FileList);
+}

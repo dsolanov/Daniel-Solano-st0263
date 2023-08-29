@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package file;
+
+service FileSearch {
+  rpc SearchFiles (FileSearchRequest) returns (FileSearchResponse);
+}
+
+message FileSearchRequest {
+  string directory = 1;
+  string pattern = 2;
+}
+
+message FileSearchResponse {
+  repeated string files = 1;
+}
