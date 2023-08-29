@@ -76,3 +76,6 @@ El API Gateway expone una API REST para interactuar con los microservicios.
 - https://www.youtube.com/watch?v=QdR8lbudXI8
 - https://www.youtube.com/watch?v=tpESZGvwE7M
 - https://blog.logrocket.com/communicating-between-node-js-microservices-with-grpc/
+- https://www.geeksforgeeks.org/express-js-req-query-property/
+- https://www.tabnine.com/code/javascript/functions/amqplib/Connection/createChannel
+- https://github.com/amqp-node/amqplib/issues/250
