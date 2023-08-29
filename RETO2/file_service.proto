@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "google/protobuf/empty.proto"; // Importa Empty desde google/protobuf
+import "google/protobuf/empty.proto";
 
 package file_service;
 
