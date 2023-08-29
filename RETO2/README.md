@@ -83,3 +83,4 @@ El API Gateway expone una API REST para interactuar con los microservicios.
 - https://www.npmjs.com/package/grpc-tools
 - https://www.npmjs.com/package/request
 - https://github.com/grpc/grpc/issues/6557
+- https://chat.openai.com/
