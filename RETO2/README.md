@@ -72,6 +72,12 @@ El API Gateway expone una API REST para interactuar con los microservicios.
 
 ## 5. Otra Información
 
+### AWS IP Elastica
+
+- API: 35.173.87.185
+- Mserve1: 44.219.59.130
+- Mserver2: 52.7.178.136
+
 ### Referencias:
 - https://www.youtube.com/watch?v=QdR8lbudXI8
 - https://www.youtube.com/watch?v=tpESZGvwE7M
