@@ -211,7 +211,58 @@ El nombre de usuario es 'hadoop' y la contraseña puede ser cualquiera de su agr
 
 [![34.png](https://i.postimg.cc/nr3QLG2p/34.png)](https://postimg.cc/H87LZ5Fh)
 
-7. Y ya estamos listos para gestionar archivos mediante el uso de HUE para HDFS.
+7. Nos dirigimos a la pestaña 'FILES' de Hadoop y damos click, al hacerlo nos aparece el siguiente mensaje de error:
+
+[![ERROR-1.png](https://i.postimg.cc/HxWNTnKX/ERROR-1.png)](https://postimg.cc/Mc45D6zp)
+
+Para evitar este error haremos lo siguiente:
+- Iremos a EMR - Clusters y seleccionamos la opcion de 'Connect to the Primary node SSH y copiaremos el link que nos aparezca.
+
+  [![ERROR-2.png](https://i.postimg.cc/bvP6yrML/ERROR-2.png)](https://postimg.cc/k2jNwJ7t)
+  [![ERROR-3.png](https://i.postimg.cc/Lsz8PCx2/ERROR-3.png)](https://postimg.cc/DWwhkgVM)
+
+- Luego nos dirigimos a EC2 - Instances y damos click a la instancia MAESTRO
+  
+  [![ERROR-Parte-1.png](https://i.postimg.cc/kXmHfjMB/ERROR-Parte-1.png)](https://postimg.cc/9zL1fY7h)
+
+- Luego daremos click en 'CONNECT' y nos abrira una ventana para conectarnos (damos click en CONNECT)
+
+  [![ERROR-PARTE-3.png](https://i.postimg.cc/wBFtGxm7/ERROR-PARTE-3.png)](https://postimg.cc/GB8hBCzC)
+  
+- Una vez conectados se verá de esta forma:
+
+  [![ERROR-PARTE-4.png](https://i.postimg.cc/7YbpCKVc/ERROR-PARTE-4.png)](https://postimg.cc/fJnHpj1j)
+
+- Una vez allí digitaras el siguiente comando:
+  
+  ```bash
+  sudo nano /etc/hue/conf/hue.ini
+
+[![ERROR-PARTE-5.png](https://i.postimg.cc/yYbtH0FH/ERROR-PARTE-5.png)](https://postimg.cc/YhQbNGnn)
+
+- Buscaras la linea que diga [hadoop] y en ella, en la parte de [[[default]]] buscarás la linea que diga ‘webhdfs_url = http://...’ y cambiaremos el puerto de 14000 por el 9870
+O bien podrás usar la combinacionde teclas de CONTROL + W para buscar más rapidamente.
+
+  [![ERROR-PARTE-6.png](https://i.postimg.cc/2jLJd2MB/ERROR-PARTE-6.png)](https://postimg.cc/DmFBnd22)
+
+- Una vez cambiado el puerto debemos guardar los cambios.
+para esto usaremos la combinacion de teclas (en MacOs):
+- Control + X (para salir, este luego preguntará si deseamos guardar cambios)
+- luego presionamos la tecla 'Y' para confirmar el guardado.
+- Despues debemos reiniciar el servicio de HUE, con el siguiente comando:
+
+    ```bash
+  sudo systemctl restart hue.service
+
+Y ya estamos listos!
+Puede verificar yendo al EMR y seleccionando el Clúster que tiene estado 'Waiting' o 'Esperando', luego entrar a la pestaña 'Applications' o 'Aplicaciones' y buscas el link de HUE y dar click sobre él.
+
+[![ERROR-7.png](https://i.postimg.cc/25rJYWkj/ERROR-7.png)](https://postimg.cc/gxt4qnL1)
+
+> Notese que el mensaje de error ha desaparecido.
+
+
+7. Ya estamos listos para gestionar archivos mediante el uso de HUE para HDFS.
 
 
 ### Sexto paso: Servicio JUPYTERHUB funcional
