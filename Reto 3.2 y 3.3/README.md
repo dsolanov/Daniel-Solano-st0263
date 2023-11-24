@@ -1,4 +1,4 @@
-# LAB 3.0: Creación de un Clúster EMR
+# LAB 3-2 y 3-3: Implementacion de Data Warehouse con BigQuery
 
 | Información | Universidad EAFIT 2023-2 |
 | --- | --- |
