@@ -140,13 +140,24 @@ Se debe ver así:
 Y eso es todo, haz sabido crear una tabla de BigQuery la cual esta dirigida a los datos que estan presentes en el Bucket de GCP Cloud Storage!.
 
 
-### Cuarto paso: Auto-Inferencia de Esquema de los datos almacenados en Cloud Storage.
+### Cuarto y Quinto paso: Auto-Inferencia de Esquema de los datos almacenados en Cloud Storage / Hacer consultas SQL haciendo uso de la plataforma Big Query a los datos que fueron almacenados en Cloud Storage![image](https://github.com/dsolanov/Daniel-Solano-st0263/assets/73181151/639a390d-41fb-4bad-aa6b-2436f58fa8f5)
+.
 1. Nos dirigimos al buscador de GCP y digitamos 'Big Query' y seleccionamos la primera opcion que es 'Big Query'.
-2. Una vez allí haremos click sobre la tabla que creamos anteriormente (retail-table)
+2. En la sección donde se encuentra el nombre del proyecto elegimos el conjunto de datos que creamos anteriormente y seguido de este el nombre de la tabla.
 
 [![19.png](https://i.postimg.cc/zBRSGJpx/19.png)](https://postimg.cc/phRn0Mwj)
 
-3. Una vez allí, hacemos click en 'CONSULTA' y este desplegará 2 opciones, de las cuales escogeremos la que dice 'En una pestaña nueva'.
+> NOTA: Cabe aclarar que la plataforma BigQuery ‘infiere’ de forma automatica el esquema de los datos, como podemos ver en la imagen anterior.
+
+Y listo, hemos acabado este paso, ya sabemos cómo usar BigQuery para la auto-inferencia del esquema de sus datos!.
+
+Continuemos...
+
+3. Una vez allí haremos click sobre la tabla que creamos anteriormente (retail-table)
+
+[![19.png](https://i.postimg.cc/zBRSGJpx/19.png)](https://postimg.cc/phRn0Mwj)
+
+3.1 Luego, hacemos click en 'CONSULTA' y este desplegará 2 opciones, de las cuales escogeremos la que dice 'En una pestaña nueva'.
 
 [![20.png](https://i.postimg.cc/Xvr9sjMn/20.png)](https://postimg.cc/hJqJjqPY)
 
@@ -167,6 +178,8 @@ SELECT * FROM `cosmic-quarter-346419.Big_Query_Dataset.retail-table``
 - 3. Vemos reflejados los datos en la tabla
  
 [![21.png](https://i.postimg.cc/3rmVL77j/21.png)](https://postimg.cc/8skZ527s)
+
+¡Y eso es todo!... Ya sabemos hacer consultas SQL a sus tablas usando la plataforma de BigQuery.
 
 
 ## FIN DE LOS RETOS 3.2 Y 3.3
